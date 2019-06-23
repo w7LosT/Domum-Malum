@@ -1,0 +1,23 @@
+Header{
+    O header possui 100% da largura do wrapper e um height fixo de 240px (dava problema se não usasse o height, os itens abaixo subiam por causa dos itens flutuantes do header.
+    Está dividido em 4 partes:
+        Parte 1: link mais à esquerda que possui uma div cujo background é a logotipo da loja e tem uma título que está escondido e será usado posteriormente em um mediaquery. Tem 30% do tamanho do header e um height fixo de 150px (se não usar o height, a div fica com o padrão height 0). O seu background possui o tamanho contain (o qual faz com a imagem sempre esteja totalmente visível, diferente do cover que faz com ela ocupe todo o container, mes que seja cortada) e um backgroun-position center (se não usar, ele fica mais para a esquerda pois a div é um pouco maior que a imagem de background). A parte 1 está com float left para fazer com que a parte 2 fique entre ela e a parte 3 (que está com float right).
+
+        Parte 2: div no centro que está dividida em um título e outra div com checkbox e label para mostrar o menu e checkbox e label para mostrar a barra de pesquisa (ambos os checkbox e labels estão ocultos, os labels serão usado em um mediaquery), além de ter a barra de pesquisa(#busca) com um botão com um ícone de lupa(#pesquisar). O ícone de lupa possui margin-left -55px para não ficar fora da barra de pesquisa (se tirar, ele sai da barra de pesquisa. se deixar assim, poderia criar uma borda branca e um background para o ícone, assim, daria a impressão de que ele está dentro da barra de pesquisa)
+
+        Parte 3: div mais à direita é dividida em uma div com o carrinho e outros dois links: um para a página de cadastro e outro para a página de login. Também tem 30% da largura do header, mesma coisa para o height, está com float right, para que a parte 3 fique entre a parte 1 (que está como left) e a parte 2. possui line-height de 70px para "alinhar"(a linha de cada ítem da div fica com 70px, como a div tem 150px, dá a impressão de que está tudo centralizado) os itens horizontalmente na metade do seu height.
+
+        Parte 4: div para o menu, possui uma lista dentro, onde alguns list-items possuem outra lista dentro, ou seja, é um dropdown. Cada li possui um link para uma página especifica de roupa. Essa div tem 100% da largura do header e possui 40px de height (precisa pq o background está na ul, logo a ul precisa ter height pq os li estão flutuando) e a ul tem max-width de 615px (se não, ocupa 100% da div menu). Os li estão com padding de 11px top e bottom pois se for menos, o li do inner somem quando o mouse sai do li outer).
+}
+
+Corpo{
+    O corpo tem 75% da largura do wrapper, é composto de um slider e duas divs cards: best selling e from hell, que contém fotos de produtos específicos.
+
+    slider: tem max-width igual a 100% do corpo, possui uma div com as imagens que tem 100% da largura do slider e flutua à esquerda e uma div para os botões que controlam as imagens do slider os quais também estão flutuando à esquerda e tem largura de 100% do slider. Os botões estão com position relative apenas para poder ser aplicado um top negativo a fim de que eles fiquem sobre a imagem (se fosse margin, ficaria bugando conforme a página ia diminuindo).
+
+    cards: As duas divs apresentam conteúdos diferentes, mas utilizam o mesmo estilo. Elas são divididas em título e conteúdo. Usando flex-box, título e conteúdo foram colocadas em linha e tudo é centralizado tanto vertical quanto horizontalmente usando flex-box. Título e conteúdo também estão organizados com flex-box, na div de título há um flex-flow  column a fim de deixar o texto e o menu do título do card from hell em coluna. 
+}
+
+Footer{
+    Possui 100% da largura do wrapper e um height fixo de 120px (se não for especificado, a div com o logotipo some), está dividido em duas divs: uma para a logotipo e outra para o contato. Foi usado flex box para deixar as duas divs em linha. A div para logotipo ocupa 25% da largura do footer e seu background-size está como contain (mesma coisa que a logo do header. A div de contato ocupa 75% da largura do footer e está dividido em duas divs: uma para o fale conosco e outra para as redes sociais. A div de fale conosco está dentro de um link que possui 40% da largura da div contato, foi usado flex box nela para alinhar e centralizar o texto e o ícone usados nela. Ela (fale conosco) está dividida em duas divs: uma para o ícone e outra para o texto (onde esta tem título e texto), em ambas foi usado flex box para alinhar e centralizar. A div de redes sociais possui 4 ícones e possui 40% da largura da div contato, foi usado flex box para alinhar e centralizar os 4 ícones. 
+}

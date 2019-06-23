@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/roupas.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Domum Malum - Manga Curta</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="./index.html">
+                <div class="left">
+                    <h3>Domum Malum</h3>
+                </div>
+            </a>
+        
+            <div class="right">
+                <div class="carrinho">
+                    <h4>Carrinho / R$ 0,00</h4>
+                </div>
+                <a href="./login.html"><button>Login</button></a>
+                <a href="./cadastro.html"><button>Cadastrar-se</button></a>
+            </div>
+        
+            <div class="center">
+                <div class="titulo">
+                    <h3>Domum Malum - For weird people</h3>
+                </div>
+                <div class="box-pesquisa">
+                    <input type="checkbox" name="mostraMenu" id="mostraMenu">
+                    <label class="menu-hidden" for="mostraMenu" onclick="showMenu()"><i class="fas fa-bars"></i> Menu</label>
+        
+                    <input type="checkbox" name="mostraPesquisa" id="mostraPesquisa">
+                    <label class="search-hidden" for="mostraPesquisa" onclick="showPesquisa()"><i class="fas fa-search"></i></label>
+        
+                    <input type="text" name="busca" id="busca" placeholder="Busque um produto">
+                    <button class="pesquisar" id="pesquisar"><i class="fas fa-search"></i></button>
+                </div>
+            </div>  
+                    
+            <div class="menu">
+                <ul class="outer" id="menu">
+                    <li class="outer-li">Masculinas &#9661;
+                        <ul class="inner">
+                            <li><a href="./manga-curta.html">Manga Curta</a></li>
+                            <li><a href="./manga-longa.html">Manga Longa</a></li>
+                            <li><a href="./regata.html">Regata</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-li">Femininas &#9661;
+                        <ul class="inner">
+                            <li><a href="./babylook.html">Baby Looks</a></li>
+                            <li><a href="./vestido.html">Vestidos</a></li>
+                            <li><a href="./bata.html">Batas</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-li">Acessórios &#9661;
+                        <ul class="inner">
+                            <li><a href="./bone.html">Bonés</a></li>
+                            <li><a href="./cinto.html">Cintos</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-li"><a href="./calcados.html">Calçados</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="corpo">
+            <div class="filtro">
+                <h3>Ordenar Por:</h3>
+                <ul>
+                    <li>Menor Preço</li>
+                    <li>Maior Preço</li>
+                    <li>Mais Vendidos</li>                    
+                </ul>
+            </div>
+
+            <div class="conteudo-card">
+                <div class="img-card">
+                    <img src="../img/manga-curta/black_sabbath.png" alt="black_sabbath">
+                    <h4>Camiseta Black Sabbath</h4>
+                    <h5>R$ 40,00</h5>
+                    <button>Comprar</button>
+                    <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="img-card">
+                    <img src="../img/manga-curta/slipknot.jpg" alt="slipknot">
+                    <h4>Camiseta Slipknot</h4>
+                    <h5>R$ 40,00</h5>
+                    <button>Comprar</button>
+                    <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+                <div class="img-card">
+                    <img src="../img/manga-curta/korn.png" alt="korn">
+                    <h4>Camiseta Korn</h4>
+                    <h5>R$ 45,00</h5>
+                    <button>Comprar</button>
+                    <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+
+                <div class="img-card">
+                        <img src="../img/manga-curta/korn2.jpg" alt="korn2">
+                        <h4>Camiseta Korn</h4>
+                        <h5>R$ 50,00</h5>
+                        <button>Comprar</button>
+                        <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+
+                <div class="img-card">
+                        <img src="../img/manga-curta/anthrax.jpg" alt="anthrax">
+                        <h4>Camiseta Anthrax</h4>
+                        <h5>R$ 45,00</h5>
+                        <button>Comprar</button>
+                        <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+
+                <div class="img-card">
+                        <img src="../img/manga-curta/slayer.png" alt="slayer">
+                        <h4>Camiseta Slayer</h4>
+                        <h5>R$ 45,00</h5>
+                        <button>Comprar</button>
+                        <button class="hidden"><i class="fas fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+                <div class="logo-footer"></div>
+    
+                <div class="contato">
+                    <a href="./contato.html" id="fale-conosco">
+                        <div class="fale-conosco">
+                            <div class="img-contato"><i class="fas fa-headset"></i></div>
+                            <div class="texto-contato">
+                                <h4>Fale Conosco</h4>
+                                <p>Dúvida, crítica, sugestão ou elogio? Clique Aqui.</p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <div class="redes-sociais">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+    <script>
+        //Mostra o menu e esconde a barra de pesquisa
+        //Tive que usar lógica inversa, pois a normal estava gerando erro nos checkbox ao reduzir o tamanho da tela
+        function showMenu(){
+            if(document.getElementById('mostraMenu').checked) {
+                document.getElementById('menu').style.transform = "translateX(-850px)";
+                document.getElementsByClassName('outer-li').style.position = 'absolute';
+            } 
+            else {
+                if(document.getElementById('mostraPesquisa').checked){
+                    document.getElementById('mostraPesquisa').checked = false;
+                    document.getElementById('busca').style.transform = "translateX(-850px)";
+                    document.getElementById('pesquisar').style.transform = "translateX(-850px)";
+                }
+                document.getElementById('menu').style.transform = "translateX(0%)";
+                document.getElementsByClassName('outer-li').style.position = 'relative';
+            }
+        }
+        //Mostra a barra de pesquisa e esconde o menu
+        //Tive que usar lógica inversa, pois a normal estava gerando erro nos checkbox ao reduzir o tamanho da tela
+        function showPesquisa(){
+            if(document.getElementById('mostraPesquisa').checked){
+                document.getElementById('busca').style.transform = "translateX(-850px)";
+                document.getElementById('pesquisar').style.transform = "translateX(-850px)";
+            } else {
+                if(document.getElementById('mostraMenu').checked){
+                   document.getElementById('mostraMenu').checked = false;
+                   document.getElementById('menu').style.transform = "translateX(-850px)"; 
+                   document.getElementById('menu').style.display = "block";
+                }
+                document.getElementById('busca').style.transform = "translateX(0%)";
+                document.getElementById('pesquisar').style.transform = "translateX(0%)";
+            }
+        }
+    </script>
+</body>
+</html>

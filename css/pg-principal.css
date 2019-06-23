@@ -1,0 +1,716 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../img/bkg-body.jpg) no-repeat center center fixed;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+header{
+    max-width: 100%;
+    height: 240px;
+    background-color: rgba(0,0,0,.6);
+    border-bottom: 1px solid rgb(152,2,5);
+}
+
+header .left{
+    width: 30%;
+    height: 150px;
+    background-image: url(../img/domum-malum-white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    float: left;
+}
+
+header .left h3{
+    display: none;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 3px firebrick;
+    transform: translateY(140px);
+}
+
+header .right{
+    width: 30%;
+    height: 150px;
+    float: right;
+    line-height: 70px;
+    text-align: center;
+}
+
+header .right button{
+    margin-left: 10px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    background-color: firebrick;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header .right .carrinho{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 3px firebrick;
+}
+
+header .center{
+    width: 40%;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 70px;
+}
+
+header .center .titulo, .box-pesquisa{
+    margin: 0 auto;
+}
+
+header .center .titulo{
+    font-size: 15px;
+    color: #fff;
+    text-shadow: 3px 3px 3px firebrick;
+}
+
+header .center #busca{
+    width: 50%;
+    height: 30px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px firebrick;
+}
+
+header .center .pesquisar{
+    width: 45px;
+    margin-left: -55px;
+    border: none;
+    background: none;
+}
+
+header .center .box-pesquisa .search-hidden{
+    display: none;
+    width: 50%;
+    height: 60px;
+    margin: 0 auto;
+    color: white;
+    font-size: 25px;
+    border: none;
+    background: none;
+    text-shadow: 3px 3px 3px firebrick;
+    cursor: pointer;
+}
+
+header .center .menu-hidden{
+    display: none;
+    float: left;
+    width: 50%;
+    height: 60px;
+    font-size: 15px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-shadow: 3px 3px 3px firebrick;
+    cursor: pointer;
+}
+
+header .center #mostraMenu{
+    display: none;
+}
+
+header .center #mostraPesquisa{
+    display: none;
+}
+
+header .menu{
+    width: 100%;
+    margin-top: 45px;
+}
+
+.menu .outer, .inner{
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.menu .outer{
+    max-width: 615px;
+    height: 40px;
+    margin: 0 auto;
+    background-image: linear-gradient(#aa3300, firebrick, #e0612a);
+    border: 1px solid black;
+    transform: translateX(0);
+    z-index: 20;
+}
+
+.menu .outer li{
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    /* padding: 10px 4px; */
+    box-shadow: 3px 3px 5px black;
+}
+
+.menu .inner{
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0px;
+    background-image: linear-gradient(#e0612a, firebrick, #aa3300);
+    border: 1px solid black;
+    border-right: none;
+    border-top: none;
+}
+
+.menu .inner li{
+    display: none;
+    width: 100%;
+    box-shadow: none;
+}
+
+.menu .outer li, .inner li{
+    float: left;
+    padding: 11px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu .outer li:hover .inner li{
+    display: block;
+}
+
+.menu .inner li:hover{
+    background-color: rgba(0,0,0,.6);
+}
+
+.corpo{
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,.7);
+    border: 1px solid rgb(152,2,5);
+    border-top: none;
+}
+
+.corpo #galeria{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.corpo #galeria .img{
+    float: left;
+    width: 100%;
+    height: 450px;
+}
+
+.corpo #galeria .img #imagem{
+    width: 100%;
+    height: 100%;
+}
+
+.corpo #galeria .button{
+    float: left;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.corpo #galeria button{
+    position: relative;
+    top: -35px;
+    margin: 0 5px;
+    font-size: 17px;
+    text-shadow: 2px 2px 5px red;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.corpo #galeria button:hover{
+    color: firebrick;
+}
+
+.card{
+    width: 100%;
+    /* min-height: 150px; */
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/bkg-footer.png') no-repeat;
+    /* background-size: cover; */
+}
+
+.card .titulo{
+    width: 28%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 2px #aa3300;
+    
+}
+
+.card .titulo ul{
+    list-style: none;
+    width: 50%;
+    margin: 5px auto;
+}
+
+.card .titulo ul li{
+    padding: 5px;
+    margin: 5px;
+    font-size: 13px;
+    background-color: #aa3300;
+    cursor: pointer;
+}
+
+.card .conteudo-card{
+    width: 72%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,.6);
+}
+
+.card .conteudo-card .mais{
+    width: 23px;
+    margin: 0 20px 0 -10px;
+    color: #fff;
+    background: url('../img/bg-img-card-alt2.jpeg') no-repeat;
+    border-radius: 90%;
+}
+
+.card .conteudo-card .mais div{
+    padding: 5px;
+}
+
+.card .conteudo-card .img-card{
+    width: 23%;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background: url('../img/bg-img-card-alt2.jpeg') no-repeat;
+}
+
+.card .conteudo-card .img-card img{
+    width: 60%;
+    max-height: 120px;
+    margin: 10px;
+}
+
+.img-card button{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    background-color: #812a05;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img-card .hidden{
+    display: none;
+}
+
+#manga-longa-card,#vestido-card,#regata-card{
+    display: none;
+}
+
+footer{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    background: url('../img/bkg-body.png') no-repeat top right;
+    background-color: rgb(152,2,5,.6);
+}
+
+.logo-footer{
+    width: 25%;
+    /* height: 100%; */
+    background: url('../img/domum-malum-white.png') no-repeat center center;
+    background-size: contain;
+}
+
+footer .contato{
+    width: 75%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .contato a#fale-conosco{
+    width: 40%;
+    margin: 8px 15px;
+    text-decoration: none;
+}
+
+footer .contato .fale-conosco {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+footer .contato .fale-conosco .img-contato{
+    float: left;
+    width: 40%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50pt;
+}
+
+footer .contato .fale-conosco .texto-contato{
+    float: left;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 12pt;
+}
+
+.texto-contato p{
+    color: white;
+}
+
+footer .contato .redes-sociais{
+    width: 40%;
+    height: 100px;
+    margin: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25pt;
+    color: white;
+}
+
+footer .contato .redes-sociais a{
+    color: #fff;
+}
+
+/* Reseta a barra de pesquisa e o seu ícone para o centro da tela */
+@media only screen and (min-width:861px){
+    header .center .box-pesquisa #busca, .pesquisar{
+        transform: translateX(0%) !important;
+    }
+}
+
+@media only screen and (max-width:860px){
+    .right .carrinho{
+        font-size: 12px;
+    }
+
+    header .center .box-pesquisa #busca, .pesquisar{
+        transform: translateX(-850px);
+    }
+
+    header .center .box-pesquisa .search-hidden{
+        display: block;
+    }
+
+    header .center .titulo{
+        font-size: 12px;
+    }
+
+    header .center .box-pesquisa #busca{
+        position: absolute; /* Não faz diferença, só to com preguiça de tirar e ajeitar dnv*/
+        width: 99%;
+        top: 32%;
+        left: 1px;
+        transition: 1s;
+    }
+
+    header .center .box-pesquisa .pesquisar{
+        position: absolute; /* Não faz diferença, só to com preguiça de tirar e ajeitar dnv*/
+        top: 33.3%;
+        right: 20px;
+        transition: 1s;
+    }
+
+    .card .titulo{
+        font-size: 12px;
+    }
+
+    footer .contato .fale-conosco .img-contato{
+        font-size: 35pt;
+    }
+
+    footer .contato .fale-conosco .texto-contato{
+        font-size: 12pt;
+    }
+
+    footer .contato .redes-sociais{
+        font-size: 25pt;
+    }
+}
+
+/* Reseta o menu para o centro da tela */
+@media screen and (min-width:701px){
+    #menu{
+        transform: translateX(0%) !important;
+    }
+    #busca{
+        top: 150px !important;
+    }
+    .pesquisar{
+        top: 160px !important;
+    }
+}
+
+@media only screen and (max-width:700px){
+    header{
+        min-width: 350px; /* Podia ter usado %, mas to com preguiça de mudar*/
+        height: 280px;
+    }
+
+    header .left{
+        width: 100%; /* Altera a largura da logo para 100%, assim ela fica acima de tudo em resoluções menores*/
+    }
+
+    header .left h3{
+        display: block; /* Faz com que o título oculto na div logo do header apareça*/
+    }
+
+    header .right{
+        width: 100%; /* Faz a div right ficar abaixo da div left, pois ambas estão com 100% de width*/
+        height: 50px;
+        line-height: 50px;
+        margin-top: 15px;
+    }
+
+    header .right button{
+        float: left; /* Separa os botões login e cadatrar-se do carrinho*/
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 10px;
+    }
+
+    header .right .carrinho{
+        float: right; /* Separa os botões login e cadatrar-se do carrinho*/
+        width: 35%;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+
+    header .center{
+        width: 100%; /* Faz a div center ficar abaixo da right, pois ambas estão com 100% de width*/
+        position: relative; /* Pra fazer com que a barra de pesquisa e o ícone de pesquisa fiquem abaixo do header em resoluções menores*/
+        height: 60px;
+        clear: both;
+    }
+
+    header .center .titulo{
+        display: none;
+    }
+
+    header .center .box-pesquisa{
+        width: 35%;
+    }
+
+    header .center .box-pesquisa #busca{
+        display: block;
+        position: absolute; /* Pra fazer com que a barra de pesquisa e o ícone de pesquisa fiquem abaixo do header em resoluções menores*/
+        top: 65px;
+        left: 1px;
+        transition: 1s;
+    }
+
+    header .center .box-pesquisa .pesquisar{
+        display: block;
+        position: absolute; /* Pra fazer com que a barra de pesquisa e o ícone de pesquisa fiquem abaixo do header em resoluções menores*/
+        top: 75px;
+        right: 20px;
+        transition: 1s;
+    }
+
+    header .center .search-hidden{
+        float: left; /*Só para que a lupa fique mais afastada do label menu*/
+    }
+
+    header .center .menu-hidden{
+        display: block; /* Mostra o label para o menu */
+
+    }
+
+    header .menu{
+        margin-top: 5px;
+    }
+
+    .menu .outer{
+        /* height: auto; */
+        background: none;
+        border: none;
+        transform: translateX(-850px);
+        transition-duration: 1s;
+    }
+
+    .menu .outer li{
+        width: 100%;
+        background-image: linear-gradient(#aa3300, firebrick, #e0612a);
+    }
+
+    .menu .inner{
+        position: relative; /* Necessário para que os itens de menu da lista inner apareçam em resoluções menores */
+        top: 11px;
+        left: -1px;
+        background-color: transparent;
+    }
+
+    .menu .inner li{
+        background: black;
+    }
+
+    .menu .inner li:hover{
+        background-color: rgba(0,0,0,.6);
+    }
+
+    /* Necessário, pois o relative do menu tá jogando o slider para baixo*/
+    .corpo #galeria .img{
+        margin-top: -170px;
+    }
+
+    .corpo #galeria .img{
+        height: 300px;
+    }
+
+    .card{
+        flex-direction: column;
+        flex-wrap: wrap; /* Necessário pois não estava "quebrando" com o direction column*/
+    }
+
+    .card .titulo, .card .conteudo-card{
+        width: 100% !important; /* Necessário usar, pois tinha algo sobrepondo*/
+    }
+
+    .card .titulo ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Faz com que os li ocupem todo o ul */
+    .card .titulo ul li{
+        width: 25%;
+    }
+
+    footer .contato .fale-conosco .img-contato{
+        font-size: 30pt;
+    }
+
+    footer .contato .fale-conosco .texto-contato{
+        font-size: 10pt;
+    }
+
+    /* Para obrigar os ícones a ficarem em um quadrado*/
+    footer .contato .redes-sociais{
+        width: 80px; 
+        margin-left: 35px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 22pt;
+    }
+}
+
+@media screen and (max-width:600px){
+    /* Limita o wrapper*/
+    .wrapper{
+        min-width: 360px;
+    }
+
+    /* Faz as imagens do slider parecerem ter "melhor qualidade" */
+    .corpo #galeria .img{
+        height: 250px;
+    }
+
+    .corpo .card .img-card h4{
+        font-size: 13px;
+    }
+
+    .corpo .card .img-card h5{
+        font-size: 11px;
+    }
+
+    /* Centraliza os textos dos list-item e os deixa com height fixo*/
+    .card .titulo ul li{
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-card button{
+        display: none;
+    }
+
+    /* Faz aparecer o carrinho e centraliza ele*/
+    .img-card .hidden{
+        display: block;
+        margin: 10px auto;
+    }
+
+    footer .contato .fale-conosco .img-contato{
+        font-size: 18pt;
+    }
+
+    footer .contato .fale-conosco .texto-contato{
+        font-size: 9pt;
+    }
+
+    footer .contato .redes-sociais{
+        width: 65px;
+        font-size: 18pt;
+    }
+}
+
+@media screen and (max-width:550px){
+    .card .titulo ul li{
+        font-size: 12px;
+    }
+
+    /* footer .contato .fale-conosco .img-contato{
+        font-size: 18pt;
+    } */
+
+    footer .contato .fale-conosco .texto-contato{
+        font-size: 8pt;
+    } 
+
+}
