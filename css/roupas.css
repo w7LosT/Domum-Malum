@@ -543,7 +543,7 @@ footer .contato .redes-sociais a{
     }
 
     .corpo .filtro{
-        margin: -165px 5px 0 -50px;
+        margin: -165px 5px 0 -50px !important;
     }
 
     .corpo .filtro h3{
